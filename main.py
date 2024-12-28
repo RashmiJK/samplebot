@@ -18,7 +18,7 @@ def main():
     print(response) """
 
     ai_client = UseAzureAIInferencePkg()
-    response = ai_client.chat_completion(messages)
+    response = ai_client.process_conversation("What's the weather like in London?")
     print(response)
 
     """     ai_client = UseLangchainPkg()

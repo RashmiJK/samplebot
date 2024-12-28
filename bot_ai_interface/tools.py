@@ -5,6 +5,7 @@ class WeatherResponse(BaseModel):
     condition: str
 
 class WeatherAPI:
-    def get_weather(self, location: str, unit: str = "celsius") -> WeatherResponse:
+    def get_weather(self, location: str, unit: str = "celsius") -> dict:
         # simulate weather API call
-        return WeatherResponse(temperature=18, condition="cloudy")
+        weather = WeatherResponse(temperature=18, condition="cloudy")
+        return weather.dict()
