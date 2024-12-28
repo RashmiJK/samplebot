@@ -1,0 +1,5 @@
+.vscode/
+.env
+.DS_Store
+my_bot.egg-info/
+**/__pycache__/
